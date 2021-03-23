@@ -43,7 +43,7 @@ class Board extends React.Component{
 
 class Square extends React.Component{
     renderCell(i){
-        
+        return <Cell />;
     }
     render(){
         <div className = "CellRow">
@@ -62,4 +62,11 @@ class Square extends React.Component{
             {this.renderCell(8)}
         </div>
     }
+}
+
+function Cell(){
+    return (
+        <button className = "Cell">
+        </button>
+    )
 }
